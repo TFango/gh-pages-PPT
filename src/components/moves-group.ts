@@ -1,3 +1,7 @@
+import piedra from '../assets/piedra.svg';
+import papel from '../assets/papel.svg';
+import tijera from '../assets/tijera.svg';
+
 export type Move = "piedra" | "papel" | "tijera";
 
 export function createMovesGroup() {
@@ -49,9 +53,9 @@ transform: scale(1.1);
 
   wrap.innerHTML = `
   <div class="moves logos">
-    <img data-move="tijera" src="./src/assets/tijera.svg" alt="" class="logo move" />
-    <img data-move="piedra" src="./src/assets/piedra.svg" alt="" class="logo move" />
-    <img data-move="papel" src="./src/assets/papel.svg" alt="" class="logo move" />
+    <img data-move="tijera" src="${tijera}" alt="" class="logo move" />
+    <img data-move="piedra" src="${piedra}" alt="" class="logo move" />
+    <img data-move="papel" src="${papel}" alt="" class="logo move" />
     </div>
   `;
 

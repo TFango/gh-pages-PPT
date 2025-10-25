@@ -1,3 +1,7 @@
+import tijera from '../assets/tijera.svg';
+import piedra from '../assets/piedra.svg';
+import papel from '../assets/papel.svg';
+
 export function createLogos() {
   const wrap = document.createElement("div");
   wrap.className = "logos";
@@ -25,9 +29,9 @@ export function createLogos() {
   `;
 
   wrap.innerHTML = `
-    <img src="./src/assets/tijera.svg" alt="" class="logo" />
-    <img src="./src/assets/piedra.svg" alt="" class="logo" />
-    <img src="./src/assets/papel.svg" alt="" class="logo" />
+    <img src="${tijera}" alt="" class="logo" />
+    <img src="${piedra}" alt="" class="logo" />
+    <img src="${papel}" alt="" class="logo" />
   `;
 
   wrap.prepend(style);

@@ -1,3 +1,7 @@
+import piedra from "../assets/piedra.svg";
+import papel from "../assets/papel.svg";
+import tijera from "../assets/tijera.svg";
+
 export type Move = "piedra" | "papel" | "tijera";
 export type Role = "user" | "cpu";
 
@@ -30,9 +34,9 @@ export function createMoveIcon(p: Props) {
   `;
 
   const srcByMove: Record<Move, string> = {
-    piedra: "./src/assets/piedra.svg",
-    papel: "./src/assets/papel.svg",
-    tijera: "./src/assets/tijera.svg",
+    piedra,
+    papel,
+    tijera,
   };
 
   wrap.innerHTML = `
