@@ -1,0 +1,22 @@
+{
+  "name": "piedra-papel-tijera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "gh-pages",
+    "build-and-deploy": "pnpm run build && pnpm run deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "vite": "^7.1.10"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
